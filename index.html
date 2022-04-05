@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <nav class="header__main-menu">
-            <ul class="main-menu__list">
+            <ul class="main-menu__list" role="list">
                 <li class="main-menu__item"><a href="javascript.void(0)" class="main-menu__link">Women</a></li>
                 <li class="main-menu__item"><a href="javascript.void(0)" class="main-menu__link">Men</a></li>
                 <li class="main-menu__item"><a href="javascript.void(0)" class="main-menu__link">Kids</a></li>
@@ -18,11 +18,11 @@
         </nav>
 
         <div class="header__logo-container">
-            <img src="source/img/logo.svg">
+            <a href="https://www.kufar.by/l" aria-label="home page"><img src="source/img/logo.svg" alt="" role="presentation"></a>
         </div>
 
         <nav class="header__user-menu">
-            <ul class="main-menu__list">
+            <ul class="main-menu__list" role="list">
                 <li class="main-menu__item"><a href="javascript.void(0)" class="main-menu__link">Account</a></li>
                 <li class="main-menu__item"><a href="javascript.void(0)" class="main-menu__link">Search</a></li>
                 <li class="main-menu__item"><a href="javascript.void(0)" class="main-menu__link">Cart (0)</a></li>
@@ -31,43 +31,43 @@
     </header>
 
     <main class="main">
-        <section class="history">
-            <ul class="history__list">
+        <nav class="history">
+            <ul class="history__list" role="list">
                 <li class="history__item"><a href="javascript.void(0)" class="history__link">Home</a></li>
                 <li class="history__item"><a href="javascript.void(0)" class="history__link">Women</a></li>
                 <li class="history__item"><a href="javascript.void(0)" class="history__link">White unisex t-shirt</a></li>
             </ul>
-        </section>
+        </nav>
 
-        <section class="product">
+        <section class="product" aria-labelledby="product-name">
             <div>
                 <div class="product__image-container">
 
                 </div>
                 <div class="product__info">
-                    <h1 class="product__name text--header">White unisex t-shirt</h1>
+                    <h1 class="product__name text--header" id="product-name">White unisex t-shirt</h1>
                     <p class="product__code text--large mt-24">CHF 40</p>
                     <p class="color--tertiary mt-24">Tax included</p>
 
                     <div class="mt-48">
                         <p>Size</p>
                         <form class="product__size-form" action="/">
-                            <label for="product__size--xs" class="product__size-label">XS</label>
+                            <label for="product__size--xs" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XS</label>
                             <input type="radio" name="product__size" id="product__size--xs" class="product__size-radio">
 
-                            <label for="product__size--s" class="product__size-label">S</label>
+                            <label for="product__size--s" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> S</label>
                             <input type="radio" name="product__size" id="product__size--s" class="product__size-radio">
 
-                            <label for="product__size--m" class="product__size-label">M</label>
+                            <label for="product__size--m" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> M</label>
                             <input type="radio" name="product__size" id="product__size--m" class="product__size-radio">
 
-                            <label for="product__size--l" class="product__size-label">L</label>
+                            <label for="product__size--l" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> L</label>
                             <input type="radio" name="product__size" id="product__size--l" class="product__size-radio">
 
-                            <label for="product__size--xl" class="product__size-label">XL</label>
+                            <label for="product__size--xl" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XL</label>
                             <input type="radio" name="product__size" id="product__size--xl" class="product__size-radio">
 
-                            <label for="product__size--2xl" class="product__size-label product__size-label">2XL</label>
+                            <label for="product__size--2xl" class="product__size-label product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> 2XL</label>
                             <input type="radio" name="product__size" id="product__size--2xl" class="product__size-radio">
                         </form>
                     </div>
@@ -75,22 +75,22 @@
                     <div class="mt-24">            
                         <p>Color - White</p> 
                         <form class="product__color-form" action="/">
-                            <label for="product__color--white" class="product__color-label" title="White"></label>
+                            <label for="product__color--white" class="product__color-label" title="White" aria-hidden="true"><span class="visually-hidden">choose color</span> white</label>
                             <input type="radio" name="product__color" id="product__color--white" class="product__color-radio">
 
-                            <label for="product__color--black" class="product__color-label" title="Black"></label>
+                            <label for="product__color--black" class="product__color-label" title="Black" aria-hidden="true"><span class="visually-hidden">choose color</span> black</label>
                             <input type="radio" name="product__color" id="product__color--black" class="product__color-radio">
 
-                            <label for="product__color--gray" class="product__color-label" title="Gray"></label>
+                            <label for="product__color--gray" class="product__color-label" title="Gray" aria-hidden="true"><span class="visually-hidden">choose color</span> gray</label>
                             <input type="radio" name="product__color" id="product__color--gray" class="product__color-radio">
 
-                            <label for="product__color--purple-latte" class="product__color-label" title="Purple latte"></label>
+                            <label for="product__color--purple-latte" class="product__color-label" title="Purple latte" aria-hidden="true"><span class="visually-hidden">choose color</span> purple latte</label>
                             <input type="radio" name="product__color" id="product__color--purple-latte" class="product__color-radio">
 
-                            <label for="product__color--red" class="product__color-label" title="Red"></label>
+                            <label for="product__color--red" class="product__color-label" title="Red" aria-hidden="true"><span class="visually-hidden">choose color</span> red</label>
                             <input type="radio" name="product__color" id="product__color--red" class="product__color-radio">
 
-                            <label for="product__color--orange" class="product__color-label" title="Orange"></label>
+                            <label for="product__color--orange" class="product__color-label" title="Orange" aria-hidden="true"><span class="visually-hidden">choose color</span> orange</label>
                             <input type="radio" name="product__color" id="product__color--orange" class="product__color-radio">
                         </form>
                     </div>
@@ -98,15 +98,15 @@
                     <div class="mt-24">
                         <p>Quantity</p>
                         <form class="product__quantity-form" action="/">
-                            <button class="product__quantity-button">-</button>
+                            <button class="product__quantity-button" aria-label="subtract product" title="subtract product">-</button>
                             <input type="text" class="product__quantity-count"></button>
-                            <button class="product__quantity-button">+</button>
+                            <button class="product__quantity-button" aria-label="add product" title="add product">+</button>
                         </form>
                     </div>
 
                     <div class="product__button-container">
-                        <button class="product__button product__button--transent">ADD TO CART</button>
-                        <button class="product__button product__button--blue">BUY IT NOW</button>
+                        <button class="product__button product__button--transent">add <span class="visually-hidden">White unisex t-shirt</span> to cart</button>
+                        <button class="product__button product__button--blue">buy <span class="visually-hidden">White unisex t-shirt</span> it now</button>
                     </div>
 
                     <p class="mt-48 text--big">
@@ -117,7 +117,7 @@
             </div>
 
             <div class="product__additional">
-                <ul class="product__additional-list">
+                <ul class="product__additional-list" role="list">
                     <li class="product__additional-item">
                         <div class="product__additional-container">
                             <p class="product__additional-title">Sizing & Fit</p>
@@ -149,76 +149,92 @@
             </div>
         </section>
 
-        <section class="other-product">
-            <h2 class="other-product_header">You may also like</h2>
+        <section class="other-product" aria-labelledby="also-product">
+            <h2 class="other-product_header" id="also-product">You may also like</h2>
             <div class="other-product__container">
-                <ul class="other-product__card-list">
-                    <li class="other-product__card">
-                        <figure>
-                            <img src="source/img/products/other-product-1.jpg" class="other-product__card-image" role="presentation">
-                            <figcaption>Product name</figcaption>
-                        </figure>
-
-                        <div class="other-product__color-container">
-                            <ul class="other-product__color-list">
-                                <li class="other-product__color-item other-product__color-item--dark-yellow"></li>
-                                <li class="other-product__color-item other-product__color-item--apricot"></li>
-                                <li class="other-product__color-item other-product__color-item--pinc"></li>
-                                <li class="other-product__color-item other-product__color-item--purple"></li>
-                            </ul>
+                <ul class="other-product__list" role="list">
+                    <li class="other-product__item">
+                        <div class="other-product-card__media">
+                            <img src="source/img/products/other-product-1.jpg" alt="" class="other-product-card__image" role="presentation">
                         </div>
-                        <p class="other-product__card-info">CHF 40</p>
+                        <div class="other-product-card__info">
+                            <h3>
+                                <a href="javascript.void(0)">Product name</a>
+                            </h3>
+    
+                            <div class="other-product-card__color-container">
+                                <ul class="other-product-card__color-list">
+                                    <li class="other-product-card__color-item other-product-card__color-item--dark-yellow"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--apricot"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--pinc"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--purple"></li>
+                                </ul>
+                            </div>
+                            <p class="other-product-card__description">CHF 40</p>
+                        </div>          
                     </li>
 
-                    <li class="other-product__card">
-                        <figure>
-                            <img src="source/img/products/other-product-2.jpg" class="other-product__card-image" role="presentation">
-                            <figcaption>Product name</figcaption>
-                        </figure>
-
-                        <div class="other-product__color-container">
-                            <ul class="other-product__color-list">
-                                <li class="other-product__color-item other-product__color-item--dark-yellow"></li>
-                                <li class="other-product__color-item other-product__color-item--apricot"></li>
-                                <li class="other-product__color-item other-product__color-item--pinc"></li>
-                                <li class="other-product__color-item other-product__color-item--purple"></li>
-                            </ul>
+                    <li class="other-product__item">
+                        <div class="other-product-card__media">
+                            <img src="source/img/products/other-product-2.jpg" alt="" class="other-product-card__image" role="presentation">
                         </div>
-                        <p class="other-product__card-info">CHF 40</p>
+                        <div class="other-product-card__info">
+                            <h3>
+                                <a href="javascript.void(0)">Product name</a>
+                            </h3>
+    
+                            <div class="other-product-card__color-container">
+                                <ul class="other-product-card__color-list">
+                                    <li class="other-product-card__color-item other-product-card__color-item--dark-yellow"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--apricot"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--pinc"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--purple"></li>
+                                </ul>
+                            </div>
+                            <p class="other-product-card__description">CHF 40</p>
+                        </div>          
                     </li>
 
-                    <li class="other-product__card">
-                        <figure>
-                            <img src="source/img/products/other-product-3.jpg" class="other-product__card-image" role="presentation">
-                            <figcaption>Product name</figcaption>
-                        </figure>
-
-                        <div class="other-product__color-container">
-                            <ul class="other-product__color-list">
-                                <li class="other-product__color-item other-product__color-item--dark-yellow"></li>
-                                <li class="other-product__color-item other-product__color-item--apricot"></li>
-                                <li class="other-product__color-item other-product__color-item--pinc"></li>
-                                <li class="other-product__color-item other-product__color-item--purple"></li>
-                            </ul>
+                    <li class="other-product__item">
+                        <div class="other-product-card__media">
+                            <img src="source/img/products/other-product-3.jpg" alt="" class="other-product-card__image" role="presentation">
                         </div>
-                        <p class="other-product__card-info">CHF 40</p>
+                        <div class="other-product-card__info">
+                            <h3>
+                                <a href="javascript.void(0)">Product name</a>
+                            </h3>
+    
+                            <div class="other-product-card__color-container">
+                                <ul class="other-product-card__color-list">
+                                    <li class="other-product-card__color-item other-product-card__color-item--dark-yellow"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--apricot"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--pinc"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--purple"></li>
+                                </ul>
+                            </div>
+                            <p class="other-product-card__description">CHF 40</p>
+                        </div>          
                     </li>
 
-                    <li class="other-product__card">
-                        <figure>
-                            <img src="source/img/products/other-product-4.jpg" class="other-product__card-image" role="presentation">
-                            <figcaption>Product name</figcaption>
-                        </figure>
-
-                        <div class="other-product__color-container">
-                            <ul class="other-product__color-list">
-                                <li class="other-product__color-item other-product__color-item--dark-yellow"></li>
-                                <li class="other-product__color-item other-product__color-item--apricot"></li>
-                                <li class="other-product__color-item other-product__color-item--pinc"></li>
-                                <li class="other-product__color-item other-product__color-item--purple"></li>
-                            </ul>
+                    <li class="other-product__item">
+                        <div class="other-product-card__media">
+                            <img src="source/img/products/other-product-4.jpg" alt="" class="other-product-card__image" role="presentation">
                         </div>
-                        <p class="other-product__card-info">CHF 40</p>
+                        <div class="other-product-card__info">
+                            <h3>
+                                <a href="javascript.void(0)">Product name</a>
+                            </h3>
+    
+                            <div class="other-product-card__color-container">
+                                <ul class="other-product-card__color-list">
+                                    <li class="other-product-card__color-item other-product-card__color-item--dark-yellow"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--apricot"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--pinc"></li>
+                                    <li class="other-product-card__color-item other-product-card__color-item--purple"></li>
+                                </ul>
+                            </div>
+                            <p class="other-product-card__description">CHF 40</p>
+                        </div>          
                     </li>
                 </ul>
             </div>
@@ -231,28 +247,28 @@
                 <p class="footer__menu-title">ABOUT</p>
                 <p class="footer__menu-adress">Susparsa Store Geneva, Switzerland</p>
                 <div class="footer__social-container">
-                    <a href="" class="footer__social-item"></a>
-                    <a href="" class="footer__social-item"></a>
+                    <a href="javascript.void(0)" class="footer__social-item" title="facebook"></a>
+                    <a href="javascript.void(0)" class="footer__social-item" title="instagram"></a>
                 </div>
             </div>
             <div class="footer__menu">
                 <p class="footer__menu-title">Company</p>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item">Women</li>
-                    <li class="footer__menu-item">Men</li>
-                    <li class="footer__menu-item">Kids</li>
-                    <li class="footer__menu-item">About Us</li>
-                    <li class="footer__menu-item">Our Materials</li>
+                <ul class="footer__menu-list" role="list">
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Women</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Men</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Kids</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">About Us</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Our Materials</a></li>
                 </ul>
             </div>
             <div class="footer__menu">
                 <p class="footer__menu-title">Useful Links</p>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item">Privacy Policy</li>
-                    <li class="footer__menu-item">Shipping Policy</li>
-                    <li class="footer__menu-item">Return & Refund</li>
-                    <li class="footer__menu-item">Policy Terms of Service</li>
-                    <li class="footer__menu-item">Contact Us</li>
+                <ul class="footer__menu-list" role="list">
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Privacy Policy</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Shipping Policy</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Return & Refund</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Policy Terms of Service</a></li>
+                    <li class="footer__menu-item"><a href="javascript.void(0)" class="footer__menu-link">Contact Us</a></li>
                 </ul>
             </div>
         </div>      
