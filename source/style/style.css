@@ -4,6 +4,7 @@
     --border: #ccc;
     --disabled: #929499;
     --tertiary: #5E626B;
+    --primary: #171C8F;
 }
 
 
@@ -28,12 +29,32 @@ body {
     margin-right: auto;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
 .mt-24 {
     margin-top: 24px;
 }
 
 .mt-48 {
     margin-top: 48px;
+}
+
+.text--body {
+    font-size: 16px;
+    line-height: 1.23;
+    font-weight: 400;
+    color: var(--main-black);
+}
+
+.text--center {
+    text-align: center;
 }
 
 .visually-hidden {
@@ -125,6 +146,106 @@ body {
 .history__link:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+.other-product__header-container {
+    margin-top: 100px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.other-product__header {
+    color: var(--primary);
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.23;
+    letter-spacing: 0.01em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.other-product__container {
+    margin-top: 64px;
+    overflow: hidden;
+}
+
+.other-product__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: -24px 32px 0 32px;
+    padding-left: 0;
+}
+
+.other-product__item {
+    margin-top: 24px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.other-product-card__image {
+    width: 248px;
+    height: 368px;
+}
+
+.other-product-card__info {
+    margin-top: 20px;
+}
+
+.other-product-card__title {
+    text-align: center;
+}
+
+.other-product-card__title-link {
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+.other-product-card__color-container {
+    margin-top: 8px;
+}
+
+.other-product-card__color-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.other-product-card__color-item {
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #1A1F29;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     margin-top: 80px;
