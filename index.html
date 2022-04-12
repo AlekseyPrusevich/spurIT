@@ -60,11 +60,47 @@
         </nav>
 
         <section class="product" aria-labelledby="product-name">
-            <div>
-                <div class="product__image-container">
-                    <img src="source/img/products/product.jpg" alt="" class="product__image" role="presentation">
+            <div class="product__container">
+                <div class="product__media">
+                    <div class="product__image-container">
+                        <img src="source/img/products/product.jpg" alt="" class="product__image" role="presentation">
+                    </div>
+    
+                    <div class="product__additional">
+                        <ul class="product__additional-list" role="list">
+                            <li class="product__additional-item">
+                                <div class="product__additional-container">
+                                    <p class="product__additional-title">Sizing & Fit</p>
+                                    <button class="product__additional-button"></button>
+                                </div>
+                                <div class="product__additional">
+                                    <p>Olga is 175cm, she is wearing a size S.</p>
+                                </div>
+                            </li>
+                            <li class="product__additional-item">
+                                <div class="product__additional-container">
+                                    <p class="product__additional-title">Composition & Care</p>
+                                    <button class="product__additional-button"></button>
+                                </div>
+                                <div class="product__additional">
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li class="product__additional-item">
+                                <div class="product__additional-container">
+                                    <p class="product__additional-title">Delivery & Returns</p>
+                                    <button class="product__additional-button"></button>
+                                </div>
+                                <div class="product__additional">
+                                    <p></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="product__info">
+
                     <h1 class="product__name text--header" id="product-name">White unisex t-shirt</h1>
                     <p class="product__code text--large mt-24">CHF 40</p>
                     <p class="color--tertiary mt-24">Tax included</p>
@@ -120,60 +156,34 @@
 
                         <fieldset class="mt-24">
                             <p>Quantity</p>
-
                             <button class="product__quantity-button" aria-label="subtract product" title="subtract product">-</button>
                             <input type="text" class="product__quantity-count" name="product-count" value="1">
                             <button class="product__quantity-button" aria-label="add product" title="add product">+</button>
                         </fieldset>
 
-                        <fieldset class="product__button-container">
-                            <button class="product__button product__button--transent" type="submit">
-                                add <span class="visually-hidden">White unisex t-shirt</span> to cart
-                            </button>
-                            <button class="product__button product__button--blue" type="submit">
-                                buy <span class="visually-hidden">White unisex t-shirt</span> it now
-                            </button>
+                       
+                        <fieldset class="mt-40">
+                            <div class="product__button-container">
+                                <button class="button button--transent" type="submit">
+                                    <span>add <span class="visually-hidden">White unisex t-shirt</span> to cart</span>
+                                </button>
+                                <button class="button button--blue" type="submit">
+                                    <span>buy <span class="visually-hidden">White unisex t-shirt</span> it now</span>
+                                </button>
+                            </div>
                         </fieldset>
 
                     </form>
 
                     <p class="mt-48 text--big">
-                        A unisex basic garment with a loose fit. Light and comfortable to your skin. Certification of cotton - GOTS
+                        A unisex basic garment with a loose fit. Light and comfortable to your skin.
+                    </p>
+
+                    <p class="mt-24 text--big">
+                        Certification of cotton - GOTS
                     </p>
 
                 </div>
-            </div>
-
-            <div class="product__additional">
-                <ul class="product__additional-list" role="list">
-                    <li class="product__additional-item">
-                        <div class="product__additional-container">
-                            <p class="product__additional-title">Sizing & Fit</p>
-                            <button class="product__additional-button"></button>
-                        </div>
-                        <div class="product__additional">
-                            <p>Olga is 175cm, she is wearing a size S.</p>
-                        </div>
-                    </li>
-                    <li class="product__additional-item">
-                        <div class="product__additional-container">
-                            <p class="product__additional-title">Composition & Care</p>
-                            <button class="product__additional-button"></button>
-                        </div>
-                        <div class="product__additional">
-                            <p></p>
-                        </div>
-                    </li>
-                    <li class="product__additional-item">
-                        <div class="product__additional-container">
-                            <p class="product__additional-title">Delivery & Returns</p>
-                            <button class="product__additional-button"></button>
-                        </div>
-                        <div class="product__additional">
-                            <p></p>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </section>
 
