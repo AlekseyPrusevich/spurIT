@@ -109,56 +109,62 @@
                     <form class="mt-48">
                         
                         <p>Size</p>
-                        <fieldset class="product__size-conmntainer">
+                        <fieldset>
 
-                            <div class="product__size-conmntainer">
-                                <label for="product__size--xs" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XS</label>
+                            <div class="product__size-container">
+                                
                                 <input type="radio" name="product__size" id="product__size--xs" class="product__size-radio" value="xs">
-
-                                <label for="product__size--s" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> S</label>
+                                <label for="product__size--xs" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XS</label>
+                                
                                 <input type="radio" name="product__size" id="product__size--s" class="product__size-radio" value="s">
-
-                                <label for="product__size--m" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> M</label>
+                                <label for="product__size--s" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> S</label>
+                                
                                 <input type="radio" name="product__size" id="product__size--m" class="product__size-radio" value="m">
+                                <label for="product__size--m" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> M</label>
 
-                                <label for="product__size--l" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> L</label>
                                 <input type="radio" name="product__size" id="product__size--l" class="product__size-radio" value="l">
-
-                                <label for="product__size--xl" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XL</label>
+                                <label for="product__size--l" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> L</label>
+                                
                                 <input type="radio" name="product__size" id="product__size--xl" class="product__size-radio" value="xl">
-
+                                <label for="product__size--xl" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XL</label>
+                                
+                                <input type="radio" name="product__size" id="product__size--2xl" class="product__size-radio" value="2xl" disabled>
                                 <label for="product__size--2xl" class="product__size-label product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> 2XL</label>
-                                <input type="radio" name="product__size" id="product__size--2xl" class="product__size-radio" value="2xl">
                             </div>
                         </fieldset>
                         
                         <fieldset class="mt-24">            
                             <p>Color - White</p> 
 
-                            <label for="product__color--white" class="product__color-label" title="White" aria-hidden="true"><span class="visually-hidden">choose color white</span></label>
-                            <input type="radio" name="product__color" id="product__color--white" class="product__color-radio" value="white">
+                            <div class="product__size-container">
 
-                            <label for="product__color--black" class="product__color-label" title="Black" aria-hidden="true"><span class="visually-hidden">choose color black</span></label>
-                            <input type="radio" name="product__color" id="product__color--black" class="product__color-radio"value="black">
-
-                            <label for="product__color--gray" class="product__color-label" title="Gray" aria-hidden="true"><span class="visually-hidden">choose color gray</span></label>
-                            <input type="radio" name="product__color" id="product__color--gray" class="product__color-radio"  value="gray">
-
-                            <label for="product__color--purple-latte" class="product__color-label" title="Purple latte" aria-hidden="true"><span class="visually-hidden">choose color purple latte</span></label>
-                            <input type="radio" name="product__color" id="product__color--purple-latte" class="product__color-radio"  value="purple latte">
-
-                            <label for="product__color--red" class="product__color-label" title="Red" aria-hidden="true"><span class="visually-hidden">choose color red</span></label>
-                            <input type="radio" name="product__color" id="product__color--red" class="product__color-radio"  value="red">
-
-                            <label for="product__color--orange" class="product__color-label" title="Orange" aria-hidden="true"><span class="visually-hidden">choose color orange</span></label>
-                            <input type="radio" name="product__color" id="product__color--orange" class="product__color-radio"  value="orange">
+                                <input type="radio" name="product__color" id="product__color--white" class="product__color-radio" value="white">
+                                <label for="product__color--white" class="product__color-label product__color-label--white" title="White" aria-hidden="true"><span class="visually-hidden">choose color white</span></label>
+                                
+                                <input type="radio" name="product__color" id="product__color--black" class="product__color-radio"value="black">
+                                <label for="product__color--black" class="product__color-label product__color-label--black" title="Black" aria-hidden="true"><span class="visually-hidden">choose color black</span></label>
+                                
+                                <input type="radio" name="product__color" id="product__color--gray" class="product__color-radio"  value="gray">
+                                <label for="product__color--gray" class="product__color-label product__color-label--gray" title="Gray" aria-hidden="true"><span class="visually-hidden">choose color gray</span></label>
+                                
+                                <input type="radio" name="product__color" id="product__color--purple-latte" class="product__color-radio"  value="purple latte">
+                                <label for="product__color--purple-latte" class="product__color-label product__color-label--purple-latte" title="Purple latte" aria-hidden="true"><span class="visually-hidden">choose color purple latte</span></label>
+                                
+                                <input type="radio" name="product__color" id="product__color--red" class="product__color-radio"  value="red" disabled>
+                                <label for="product__color--red" class="product__color-label product__color-label--red" title="Red" aria-hidden="true"><span class="visually-hidden">choose color red</span></label>
+                                
+                                <input type="radio" name="product__color" id="product__color--orange" class="product__color-radio"  value="orange" disabled>
+                                <label for="product__color--orange" class="product__color-label product__color-label--orange" title="Orange" aria-hidden="true"><span class="visually-hidden">choose color orange</span></label>
+                            </div>
                         </fieldset>
 
                         <fieldset class="mt-24">
                             <p>Quantity</p>
-                            <button class="product__quantity-button" aria-label="subtract product" title="subtract product">-</button>
-                            <input type="text" class="product__quantity-count" name="product-count" value="1">
-                            <button class="product__quantity-button" aria-label="add product" title="add product">+</button>
+                            <div class="product__quantity-container">
+                                <button class="product__quantity-button" aria-label="subtract product" title="subtract product">-</button>
+                                <input type="text" class="product__quantity-count" name="product-count" value="1">
+                                <button class="product__quantity-button" aria-label="add product" title="add product">+</button>
+                            </div>
                         </fieldset>
 
                        
