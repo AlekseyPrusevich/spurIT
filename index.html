@@ -30,7 +30,7 @@
         </div>
 
         <nav class="header__user-menu">
-            <ul class="main-menu__list" role="list">
+            <ul class="main-menu__list main-menu__list--user" role="list">
                 <li class="main-menu__item">
                     <a href="javascript:void(0)" class="main-menu__link">Account</a>
                 </li>
@@ -42,6 +42,26 @@
                 </li>
             </ul>
         </nav>
+
+        <button class="header__button">
+            <span class="header__button-burder"></span>
+            <span class="visually-hidden">Show user menu</span>'
+            
+            <nav class="header__user-menu--mobile">
+                <ul class="mobile-user-menu__list" role="list">
+                    <li class="main-menu__item">
+                        <a href="javascript:void(0)" class="main-menu__link">Account</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="javascript:void(0)" class="main-menu__link">Search</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="javascript:void(0)" class="main-menu__link">Cart (0)</a>
+                    </li>
+                </ul> 
+            </nav>
+        </button>
+        
     </header>
 
     <main class="main">
@@ -64,39 +84,7 @@
                 <div class="product__media">
                     <div class="product__image-container">
                         <img src="source/img/products/product.jpg" alt="" class="product__image" role="presentation">
-                    </div>
-    
-                    <div class="product__additional">
-                        <ul class="product__additional-list" role="list">
-                            <li class="product__additional-item">
-                                <div class="product__additional-container">
-                                    <p class="product__additional-title">Sizing & Fit</p>
-                                    <button class="product__additional-button"></button>
-                                </div>
-                                <div class="product__additional">
-                                    <p>Olga is 175cm, she is wearing a size S.</p>
-                                </div>
-                            </li>
-                            <li class="product__additional-item">
-                                <div class="product__additional-container">
-                                    <p class="product__additional-title">Composition & Care</p>
-                                    <button class="product__additional-button"></button>
-                                </div>
-                                <div class="product__additional">
-                                    <p></p>
-                                </div>
-                            </li>
-                            <li class="product__additional-item">
-                                <div class="product__additional-container">
-                                    <p class="product__additional-title">Delivery & Returns</p>
-                                    <button class="product__additional-button"></button>
-                                </div>
-                                <div class="product__additional">
-                                    <p></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    </div> 
                 </div>
 
                 <div class="product__info">
@@ -110,7 +98,6 @@
                         
                         <p>Size</p>
                         <fieldset>
-
                             <div class="product__size-container">
                                 
                                 <input type="radio" name="product__size" id="product__size--xs" class="product__size-radio" value="xs">
@@ -161,13 +148,16 @@
                         <fieldset class="mt-24">
                             <p>Quantity</p>
                             <div class="product__quantity-container">
-                                <button class="product__quantity-button" aria-label="subtract product" title="subtract product">-</button>
+                                <button class="product__quantity-button" aria-label="subtract product" title="subtract product">
+                                    <span>-</span>
+                                </button>
                                 <input type="text" class="product__quantity-count" name="product-count" value="1">
-                                <button class="product__quantity-button" aria-label="add product" title="add product">+</button>
+                                <button class="product__quantity-button" aria-label="add product" title="add product">
+                                    <span>+</span>
+                                </button>
                             </div>
                         </fieldset>
-
-                       
+            
                         <fieldset class="mt-40">
                             <div class="product__button-container">
                                 <button class="button button--transent" type="submit">
@@ -190,6 +180,38 @@
                     </p>
 
                 </div>
+            </div>
+
+            <div class="product__additional">
+                <ul class="product__additional-list" role="list">
+                    <li class="product__additional-item">
+                        <div class="product__additional-container">
+                            <p class="product__additional-title">Sizing & Fit</p>
+                            <button class="product__additional-button product__additional-button--action"><span class="visually-hidden">Show more info about sizing & fit</span></button>
+                        </div>
+                        <div class="product__additional-description product__additional-description--show">
+                            <p>Olga is 175cm, she is wearing a size S.</p>
+                        </div>
+                    </li>
+                    <li class="product__additional-item">
+                        <div class="product__additional-container">
+                            <p class="product__additional-title">Composition & Care</p>
+                            <button class="product__additional-button"><span class="visually-hidden">Show more info about composition & care</span></button>
+                        </div>
+                        <div class="product__additional-description">
+                            <p></p>
+                        </div>
+                    </li>
+                    <li class="product__additional-item">
+                        <div class="product__additional-container">
+                            <p class="product__additional-title">Delivery & Returns</p>
+                            <button class="product__additional-button"><span class="visually-hidden">Show more info about delivery & returns</span></button>
+                        </div>
+                        <div class="product__additional-description">
+                            <p></p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
