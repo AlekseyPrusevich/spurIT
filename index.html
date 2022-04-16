@@ -8,7 +8,8 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__main-menu">
+        <a href="#main" class="skip-to-conten">Skip to content</a>
+        <nav class="header__main-menu" aria-labelledby="Main">
             <ul class="main-menu__list" role="list">
                 <li class="main-menu__item">
                     <a href="javascript:void(0)" class="main-menu__link">Women</a>
@@ -23,13 +24,11 @@
                     <a href="javascript:void(0)" class="main-menu__link">Company</a>
                 </li>
             </ul>
-        </nav>
 
-        <div class="header__logo-container">
-            <a href="https://aliexpress.ru/item/1005001902747335.html?_ga=2.206999440.24027282.1649498975-1115561752.1646597912&gps-id=5589723&pdp_ext_f=%7B%22sku_id%22%3A%2212000028071586481%22%2C%22ship_from%22%3A%22CN%22%7D&pvid=9b2ad826-ac9d-4cb4-9be3-2313bbffd86a&scm=1007.23880.125255.0&scm-url=1007.23880.125255.0&scm_id=1007.23880.125255.0&sku_id=12000028071586496&spm=a2g01.12602323.fdpcl001.1.734c753fwAUzvH" aria-label="home page"><img src="source/img/logo.svg" alt="" role="presentation"></a>
-        </div>
+            <div class="header__logo-container">
+                <a href="https://aliexpress.ru/item/1005001902747335.html?_ga=2.206999440.24027282.1649498975-1115561752.1646597912&gps-id=5589723&pdp_ext_f=%7B%22sku_id%22%3A%2212000028071586481%22%2C%22ship_from%22%3A%22CN%22%7D&pvid=9b2ad826-ac9d-4cb4-9be3-2313bbffd86a&scm=1007.23880.125255.0&scm-url=1007.23880.125255.0&scm_id=1007.23880.125255.0&sku_id=12000028071586496&spm=a2g01.12602323.fdpcl001.1.734c753fwAUzvH" aria-label="home page"><img src="source/img/logo.svg" alt="" role="presentation"></a>
+            </div>
 
-        <nav class="header__user-menu">
             <ul class="main-menu__list main-menu__list--user" role="list">
                 <li class="main-menu__item">
                     <a href="javascript:void(0)" class="main-menu__link">Account</a>
@@ -41,124 +40,148 @@
                     <a href="javascript:void(0)" class="main-menu__link">Cart (0)</a>
                 </li>
             </ul>
+
+            <button class="header__button">
+                <span class="header__button-burder"></span>
+                <span class="visually-hidden">Show user menu</span>'
+                
+                <nav class="header__user-menu--mobile">
+                    <ul class="mobile-user-menu__list" role="list">
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Account</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Search</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="javascript:void(0)" class="main-menu__link">Cart (0)</a>
+                        </li>
+                    </ul> 
+                </nav>
+            </button>
         </nav>
 
-        <button class="header__button">
-            <span class="header__button-burder"></span>
-            <span class="visually-hidden">Show user menu</span>'
-            
-            <nav class="header__user-menu--mobile">
-                <ul class="mobile-user-menu__list" role="list">
-                    <li class="main-menu__item">
-                        <a href="javascript:void(0)" class="main-menu__link">Account</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="javascript:void(0)" class="main-menu__link">Search</a>
-                    </li>
-                    <li class="main-menu__item">
-                        <a href="javascript:void(0)" class="main-menu__link">Cart (0)</a>
-                    </li>
-                </ul> 
-            </nav>
-        </button>
+        <nav class="breadcrumbs" aria-labelledby="Breadcrumbs">
+            <ol class="breadcrumbs__list" role="list">
+                <li class="breadcrumbs__item">
+                    <a href="javascript:void(0)" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="javascript:void(0)" class="breadcrumbs__link">Women</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="javascript:void(0)" class="breadcrumbs__link">White unisex t-shirt</a>
+                </li>
+            </ol>
+        </nav>
         
     </header>
 
-    <main class="main">
-        <nav class="history">
-            <ul class="history__list" role="list">
-                <li class="history__item">
-                    <a href="javascript:void(0)" class="history__link">Home</a>
-                </li>
-                <li class="history__item">
-                    <a href="javascript:void(0)" class="history__link">Women</a>
-                </li>
-                <li class="history__item">
-                    <a href="javascript:void(0)" class="history__link">White unisex t-shirt</a>
-                </li>
-            </ul>
-        </nav>
-
+    <main class="main" id="main">
         <section class="product" aria-labelledby="product-name">
             <div class="product__container">
-                <div class="product__media">
-                    <div class="product__image-container">
-                        <img src="source/img/products/product.jpg" alt="" class="product__image" role="presentation">
-                    </div> 
-                </div>
 
                 <div class="product__info">
-
                     <h1 class="product__name text--header" id="product-name">White unisex t-shirt</h1>
                     <p class="product__code text--large mt-24">CHF 40</p>
                     <p class="color--tertiary mt-24">Tax included</p>
 
 
                     <form class="mt-48">
-                        
-                        <p>Size</p>
                         <fieldset>
+                            <legend>Size</legend>
                             <div class="product__size-container">
                                 
-                                <input type="radio" name="product__size" id="product__size--xs" class="product__size-radio" value="xs">
-                                <label for="product__size--xs" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XS</label>
+                                <input type="radio" name="size" id="size--xs" class="product__size-radio" value="xs" tabindex="0">
+                                <label for="size--xs" class="product__size-label" aria-hidden="true">
+                                    <span class="visually-hidden">choose size </span>XS
+                                </label>
                                 
-                                <input type="radio" name="product__size" id="product__size--s" class="product__size-radio" value="s">
-                                <label for="product__size--s" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> S</label>
+                                <input type="radio" name="size" id="size--s" class="product__size-radio" value="s">
+                                <label for="size--s" class="product__size-label" aria-hidden="true">
+                                    <span class="visually-hidden">choose size </span>S
+                                </label>
                                 
-                                <input type="radio" name="product__size" id="product__size--m" class="product__size-radio" value="m">
-                                <label for="product__size--m" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> M</label>
+                                <input type="radio" name="size" id="size--m" class="product__size-radio" value="m">
+                                <label for="size--m" class="product__size-label" aria-hidden="true">
+                                    <span class="visually-hidden">choose size </span>M
+                                </label>
 
-                                <input type="radio" name="product__size" id="product__size--l" class="product__size-radio" value="l">
-                                <label for="product__size--l" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> L</label>
+                                <input type="radio" name="size" id="size--l" class="product__size-radio" value="l">
+                                <label for="size--l" class="product__size-label" aria-hidden="true">
+                                    <span class="visually-hidden">choose size </span>L
+                                </label>
                                 
-                                <input type="radio" name="product__size" id="product__size--xl" class="product__size-radio" value="xl">
-                                <label for="product__size--xl" class="product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> XL</label>
+                                <input type="radio" name="size" id="size--xl" class="product__size-radio" value="xl">
+                                <label for="size--xl" class="product__size-label" aria-hidden="true">
+                                    <span class="visually-hidden">choose size </span>XL
+                                </label>
                                 
-                                <input type="radio" name="product__size" id="product__size--2xl" class="product__size-radio" value="2xl" disabled>
-                                <label for="product__size--2xl" class="product__size-label product__size-label" aria-hidden="true"><span class="visually-hidden">choose size</span> 2XL</label>
+                                <input type="radio" name="size" id="size--2xl" class="product__size-radio" value="2xl" disabled>
+                                <label for="size--2xl" class="product__size-label product__size-label" aria-hidden="true">
+                                    <span class="visually-hidden">choose size </span>2XL
+                                </label>
                             </div>
                         </fieldset>
                         
                         <fieldset class="mt-24">            
-                            <p>Color - White</p> 
-
+                            <legend>Color - White</legend> 
                             <div class="product__size-container">
 
-                                <input type="radio" name="product__color" id="product__color--white" class="product__color-radio" value="white">
-                                <label for="product__color--white" class="product__color-label product__color-label--white" title="White" aria-hidden="true"><span class="visually-hidden">choose color white</span></label>
+                                <input type="radio" id="color--white" class="product__color-radio" name="color" value="white">
+                                <label for="color--white" class="product__color-label product__color-label--white" title="White" aria-hidden="true">
+                                    <span class="visually-hidden">choose color white</span>
+                                </label>
                                 
-                                <input type="radio" name="product__color" id="product__color--black" class="product__color-radio"value="black">
-                                <label for="product__color--black" class="product__color-label product__color-label--black" title="Black" aria-hidden="true"><span class="visually-hidden">choose color black</span></label>
+                                <input type="radio" id="color--black" class="product__color-radio" name="color" value="black">
+                                <label for="color--black" class="product__color-label product__color-label--black" title="Black" aria-hidden="true">
+                                    <span class="visually-hidden">choose color black</span>
+                                </label>
                                 
-                                <input type="radio" name="product__color" id="product__color--gray" class="product__color-radio"  value="gray">
-                                <label for="product__color--gray" class="product__color-label product__color-label--gray" title="Gray" aria-hidden="true"><span class="visually-hidden">choose color gray</span></label>
+                                <input type="radio" id="color--gray" class="product__color-radio" name="color" value="gray">
+                                <label for="color--gray" class="product__color-label product__color-label--gray" title="Gray" aria-hidden="true">
+                                    <span class="visually-hidden">choose color gray</span>
+                                </label>
                                 
-                                <input type="radio" name="product__color" id="product__color--purple-latte" class="product__color-radio"  value="purple latte">
-                                <label for="product__color--purple-latte" class="product__color-label product__color-label--purple-latte" title="Purple latte" aria-hidden="true"><span class="visually-hidden">choose color purple latte</span></label>
+                                <input type="radio" id="color--purple-latte" class="product__color-radio" name="color" value="purple latte">
+                                <label for="color--purple-latte" class="product__color-label product__color-label--purple-latte" title="Purple latte" aria-hidden="true">
+                                    <span class="visually-hidden">choose color purple latte</span>
+                                </label>
                                 
-                                <input type="radio" name="product__color" id="product__color--red" class="product__color-radio"  value="red" disabled>
-                                <label for="product__color--red" class="product__color-label product__color-label--red" title="Red" aria-hidden="true"><span class="visually-hidden">choose color red</span></label>
+                                <input type="radio" id="color--red" class="product__color-radio" name="color" value="red" disabled>
+                                <label for="color--red" class="product__color-label product__color-label--red" title="Red" aria-hidden="true">
+                                    <span class="visually-hidden">choose color red</span>
+                                </label>
                                 
-                                <input type="radio" name="product__color" id="product__color--orange" class="product__color-radio"  value="orange" disabled>
-                                <label for="product__color--orange" class="product__color-label product__color-label--orange" title="Orange" aria-hidden="true"><span class="visually-hidden">choose color orange</span></label>
+                                <input type="radio" id="color--orange" class="product__color-radio" name="color" value="orange" disabled>
+                                <label for="color--orange" class="product__color-label product__color-label--orange" title="Orange" aria-hidden="true">
+                                    <span class="visually-hidden">choose color orange</span>
+                                </label>
                             </div>
                         </fieldset>
 
                         <fieldset class="mt-24">
-                            <p>Quantity</p>
+                            <legend>Quantity</legend>
                             <div class="product__quantity-container">
-                                <button class="product__quantity-button" aria-label="subtract product" title="subtract product">
-                                    <span>-</span>
+                                <button class="product__quantity-button" title="Decrease quantity">
+                                    <span aria-hidden="true">-</span>
                                 </button>
-                                <input type="text" class="product__quantity-count" name="product-count" value="1">
-                                <button class="product__quantity-button" aria-label="add product" title="add product">
-                                    <span>+</span>
+                                <input 
+                                    type="text" 
+                                    class="product__quantity-count" 
+                                    name="product-count" 
+                                    value="1" 
+                                    aria-live="polite" 
+                                    role="status"
+                                >
+                                <button class="product__quantity-button" title="Increase quantity">
+                                    <span aria-hidden="true">+</span>
                                 </button>
                             </div>
                         </fieldset>
             
                         <fieldset class="mt-40">
+                            <legend>Buy product</legend>
                             <div class="product__button-container">
                                 <button class="button button--transent" type="submit">
                                     <span>add <span class="visually-hidden">White unisex t-shirt</span> to cart</span>
@@ -168,26 +191,28 @@
                                 </button>
                             </div>
                         </fieldset>
-
                     </form>
 
                     <p class="mt-48 text--big">
                         A unisex basic garment with a loose fit. Light and comfortable to your skin.
                     </p>
-
                     <p class="mt-24 text--big">
                         Certification of cotton - GOTS
                     </p>
+                </div>
 
+                <div class="product__media">
+                    <img src="source/img/products/product.jpg" alt="" class="product__image" role="presentation">
                 </div>
             </div>
 
-            <div class="product__additional">
+            <section class="product__additional" aria-labelledby="product-additional">
+                <h2 class="visually-hidden" id="product-additional">Additional information about product</h2>
                 <ul class="product__additional-list" role="list">
                     <li class="product__additional-item">
                         <div class="product__additional-container">
                             <p class="product__additional-title">Sizing & Fit</p>
-                            <button class="product__additional-button product__additional-button--action"><span class="visually-hidden">Show more info about sizing & fit</span></button>
+                            <button class="product__additional-button product__additional-button--action"><span class="visually-hidden">Show more information about sizing & fit</span></button>
                         </div>
                         <div class="product__additional-description product__additional-description--show">
                             <p>Olga is 175cm, she is wearing a size S.</p>
@@ -196,7 +221,7 @@
                     <li class="product__additional-item">
                         <div class="product__additional-container">
                             <p class="product__additional-title">Composition & Care</p>
-                            <button class="product__additional-button"><span class="visually-hidden">Show more info about composition & care</span></button>
+                            <button class="product__additional-button"><span class="visually-hidden">Show more information about composition & care</span></button>
                         </div>
                         <div class="product__additional-description">
                             <p></p>
@@ -205,14 +230,14 @@
                     <li class="product__additional-item">
                         <div class="product__additional-container">
                             <p class="product__additional-title">Delivery & Returns</p>
-                            <button class="product__additional-button"><span class="visually-hidden">Show more info about delivery & returns</span></button>
+                            <button class="product__additional-button"><span class="visually-hidden">Show more information about delivery & returns</span></button>
                         </div>
                         <div class="product__additional-description">
                             <p></p>
                         </div>
                     </li>
                 </ul>
-            </div>
+            </section>
         </section>
 
         <section class="other-product" aria-labelledby="also-product">
@@ -309,61 +334,74 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__menus">
-            <div class="footer__menu">
-                <p class="footer__menu-title">ABOUT</p>
-                <p class="footer__menu-adress">Susparsa Store Geneva, Switzerland</p>
-                <div class="footer__social-container">
-                    <a href="javascript:void(0)" class="footer__social-item" title="facebook">
-                        <img src="source/img/icon/facebook.svg" alt="" class="footer__social-image" role="presentation">
-                    </a>
-                    <a href="javascript:void(0)" class="footer__social-item" title="instagram">
-                        <img src="source/img/icon/instagram.svg" alt="" class="footer__social-image" role="presentation">
-                    </a>
-                </div>
-            </div>
-            <div class="footer__menu">
-                <p class="footer__menu-title">Company</p>
+    <footer class="footer" aria-level="Site">
+
+        <div class="footer__container">
+            <section aria-labelledby="adress-heading">
+                <h2 id="adress-heading" class="visually-hidden">Address</h2>
+                <address>
+                    <p class="footer__menu-title">ABOUT</p>
+                    <p class="footer__menu-adress">Susparsa Store Geneva, Switzerland</p>
+                    <div class="footer__social-container">
+                        <a href="javascript:void(0)" class="footer__social-item" title="facebook">
+                            <img src="source/img/icon/facebook.svg" alt="" class="footer__social-image" role="presentation">
+                        </a>
+                        <a href="javascript:void(0)" class="footer__social-item" title="instagram">
+                            <img src="source/img/icon/instagram.svg" alt="" class="footer__social-image" role="presentation">
+                        </a>
+                    </div>
+                </address>
+            </section>
+            
+    
+            <nav class="footer__menu" aria-label="Footer">
                 <ul class="footer__menu-list" role="list">
                     <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Women</a>
+                        <span class="footer__menu-title">Company</span>
+
+                        <ul class="footer-menu__list" role="list">
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Women</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Men</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Kids</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">About Us</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Our Materials</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Men</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Kids</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">About Us</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Our Materials</a>
+                        <span class="footer__menu-title">Useful Links</span>
+
+                        <ul class="footer-menu__list" role="list">
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Shipping Policy</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Return & Refund</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Policy Terms of Service</a></li>
+                            <li class="footer-menu__item">
+                                <a href="javascript:void(0)" class="footer__menu-link">Contact Us</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </div>
-            <div class="footer__menu">
-                <p class="footer__menu-title">Useful Links</p>
-                <ul class="footer__menu-list" role="list">
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Privacy Policy</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Shipping Policy</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Return & Refund</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Policy Terms of Service</a></li>
-                    <li class="footer__menu-item">
-                        <a href="javascript:void(0)" class="footer__menu-link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>      
-        <p class="footer__copywriter">© Susparsa 2021</p>
+            </nav>
+        </div>
+     
+        <span class="footer__copywriter"><small>© Susparsa 2021</small></span>
     </footer>
 </body>
 </html>
