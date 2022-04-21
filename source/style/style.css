@@ -283,7 +283,7 @@ legend {
 }
 
 
-
+/* breadcrumbs */ 
 
 
 .breadcrumbs {
@@ -350,9 +350,7 @@ legend {
 }
 
 
-
-
-
+/* product */
 
 
 .product {
@@ -360,9 +358,27 @@ legend {
     margin-left: 64px;
 }
 
+@media (max-width: 1024px) {
+
+    .product {
+        margin-left: 0;
+    }
+}
+
 .product__container {
     display: flex;
 }
+
+@media (max-width: 768px) {
+
+    .product__container {
+        flex-direction: column;
+    }
+}
+
+
+/* product__media */ 
+
 
 .product__media {
     max-width: 808px;
@@ -372,87 +388,65 @@ legend {
     order: -1;
 }
 
+@media (max-width: 1024px) {
+
+    .product__media {
+        width: 50%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .product__media {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .product__media {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
 .product__image {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 494px;
+    width: 100%;
 }
 
-.product__additional {
-    margin-top: 62px;
-    margin-left: 40px;
-    max-width: 728px;
-}
 
-.product__additional-list {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    border-top: 1px solid var(--disabled);
-}
+/* product__info */ 
 
-.product__additional-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    border-bottom: 1px solid var(--disabled);
-}
-
-.product__additional-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.product__additional-button {
-    position: relative;
-    border: none;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    cursor: pointer;
-    margin-right: -6px;
-}
-
-.product__additional-button::before {
-    position: absolute;
-    left: 6px;
-    content: '';
-    width: 12px;
-    height: 1px;
-    background-color: var(--main-black);
-}
-
-.product__additional-button::after {
-    position: absolute;
-    left: 6px;
-    content: ''; 
-    width: 12px;
-    height: 1px;
-    background-color: var(--main-black);
-    transition: all .2s ease;
-    transform: rotate(90deg);
-}
-
-.product__additional-button:active:after,
-.product__additional-button--action:after {
-    transform: rotate(0deg);
-}
-
-.product__additional-description {
-    padding-top: 40px;
-    display: none;
-}
-
-.product__additional-description--show {
-    display: block;
-}
 
 .product__info {
     max-width: 456px;
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+@media (max-width: 1024px) {
+
+    .product__info {
+        width: 50%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .product__info {
+        width: 100%;
+        margin-top: 32px;
+    }
 }
 
 .product__info fieldset {
@@ -676,15 +670,99 @@ legend {
 }
 
 
+/* product__additional */ 
 
 
+.product__additional {
+    margin-top: 62px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 808px;
+}
+
+@media (max-width: 1024px) {
+
+    .product__additional {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .product__additional {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.product__additional-list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-top: 1px solid var(--disabled);
+}
+
+.product__additional-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--disabled);
+}
+
+.product__additional-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__additional-button {
+    position: relative;
+    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: -6px;
+}
+
+.product__additional-button::before {
+    position: absolute;
+    left: 6px;
+    content: '';
+    width: 12px;
+    height: 1px;
+    background-color: var(--main-black);
+}
+
+.product__additional-button::after {
+    position: absolute;
+    left: 6px;
+    content: ''; 
+    width: 12px;
+    height: 1px;
+    background-color: var(--main-black);
+    transition: all .2s ease;
+    transform: rotate(90deg);
+}
+
+.product__additional-button:active:after,
+.product__additional-button--action:after {
+    transform: rotate(0deg);
+}
+
+.product__additional-description {
+    padding-top: 40px;
+    display: none;
+}
+
+.product__additional-description--show {
+    display: block;
+}
 
 
-
-
-
-
-
+/* other-product */ 
 
 
 .other-product__header-container {
@@ -692,6 +770,20 @@ legend {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 768px) {
+
+    .other-product__header-container {
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .other-product__header-container {
+        margin-top: 48px;
+    }
 }
 
 .other-product__header {
@@ -709,6 +801,20 @@ legend {
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+
+    .other-product__container {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .other-product__container {
+        margin-top: 32px;
+    }
+}
+
 .other-product__list {
     display: flex;
     justify-content: center;
@@ -718,11 +824,27 @@ legend {
     padding-left: 0;
 }
 
+@media (max-width: 1024px) {
+
+    .other-product__list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .other-product__item {
     position: relative;
     margin-top: 24px;
     margin-left: 32px;
     margin-right: 32px;
+}
+
+@media (max-width: 768px) {
+
+    .other-product__item {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
 
 .other-product-card__image {
@@ -792,10 +914,7 @@ legend {
 }
 
 
-
-
-
-
+/* footer */ 
 
 
 .footer {
@@ -809,6 +928,7 @@ legend {
 @media (max-width: 1024px) {
 
     .footer {
+        margin-top: 64px;
         padding-top: 64px;
         padding-left: 48px;
     }
@@ -817,6 +937,7 @@ legend {
 @media (max-width: 520px) {
 
     .footer {
+        margin-top: 48px;
         padding-top: 48px;
         padding-left: 24px;
     }
@@ -825,6 +946,7 @@ legend {
 @media (max-width: 440px) {
 
     .footer {
+        margin-top: 32px;
         padding-top: 32px;
         padding-left: 16px;
     }
@@ -856,6 +978,10 @@ legend {
         margin-left: -32px;
         margin-bottom: 32px;
     }
+}
+
+.footer__adress {
+    overflow: hidden;
 }
 
 .footer__menu-adress {
